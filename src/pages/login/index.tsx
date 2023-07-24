@@ -43,7 +43,7 @@ const Login: React.FC = () => {
           className="loginImage"
           style={{ minHeight: "100vh" }}
         >
-          <Image src={loginImage} preview={false} alt="" width={511} height={520} />
+          <Image src={loginImage} preview={false} alt=""  />
         </Col>
         <Col xs={24} sm={12} md={15}>
           <Row
