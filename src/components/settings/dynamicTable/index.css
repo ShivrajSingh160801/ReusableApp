@@ -1,0 +1,36 @@
+
+.ant-switch-checked {
+  background-color: green !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  background-color: white !important;
+}
+
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-item-active {
+  background-color: #286FD1 !important;
+  border-radius: 50% !important;
+}
+
+.ant-pagination-item{
+  border: solid 1px #bfb6b6 !important;
+  border-radius: 50% !important;
+  margin: 0px 6px !important;
+}
+
+.ant-pagination{
+  background-color: white;
+  margin: 0px 0px 20px 0px !important;
+  padding: 20px;
+}
+
+
+
+
+
+
