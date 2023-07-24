@@ -114,7 +114,7 @@ const Login: React.FC = () => {
                       >
                         <Input
                           size="large"
-                          placeholder="Enter your Email Address"
+                          placeholder="Enter your email address"
                         />
                       </Form.Item>
                     </Col>

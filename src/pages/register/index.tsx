@@ -96,7 +96,7 @@ const Register: React.FC = () => {
                       >
                         <Input
                           size="large"
-                          placeholder="Enter your First Name"
+                          placeholder="Enter your first name"
                         />
                       </Form.Item>
                     </Col>
@@ -125,7 +125,7 @@ const Register: React.FC = () => {
                       >
                         <Input
                           size="large"
-                          placeholder="Enter your Last Name"
+                          placeholder="Enter your last name"
                         />
                       </Form.Item>
                     </Col>
@@ -163,7 +163,7 @@ const Register: React.FC = () => {
                       >
                         <Input
                           size="large"
-                          placeholder="Enter your Email Address"
+                          placeholder="Enter your email address"
                         />
                       </Form.Item>
                     </Col>
@@ -193,7 +193,7 @@ const Register: React.FC = () => {
                         <Input
                           size="large"
                           type="number"
-                          placeholder="Enter your Phone Number"
+                          placeholder="Enter your phone number"
                           maxLength={10}
                         />
                       </Form.Item>

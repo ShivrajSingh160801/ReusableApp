@@ -25,7 +25,7 @@ const UserForm = () => {
             }
             rules={[{ required: true, message: "Please enter name" }]}
           >
-            <Input placeholder="Enter Your First Name" />
+            <Input placeholder="Enter your first name" />
           </Form.Item>
         </Col>
         <Col span={12}>
@@ -38,7 +38,7 @@ const UserForm = () => {
             }
             rules={[{ required: true, message: "Please enter last name" }]}
           >
-            <Input placeholder="Enter Your Last Name" />
+            <Input placeholder="Enter your last name" />
           </Form.Item>
         </Col>
       </Row>
@@ -59,7 +59,7 @@ const UserForm = () => {
               },
             ]}
           >
-            <Input placeholder="Enter Your Email Address" />
+            <Input placeholder="Enter your email address" />
           </Form.Item>
         </Col>
         <Col span={12}>
@@ -77,7 +77,7 @@ const UserForm = () => {
               },
             ]}
           >
-            <Input placeholder="Enter Your Phone Number" />
+            <Input placeholder="Enter your phone number" />
           </Form.Item>
         </Col>
       </Row>

@@ -28,7 +28,7 @@ const OrgForm = () => {
             }
             rules={[{ required: true, message: "Please enter oraganization name" }]}
           >
-            <Input placeholder="Enter Your Last Name" />
+            <Input placeholder="Enter your last name" />
           </Form.Item>
         </Col>
       </Row>
@@ -49,7 +49,7 @@ const OrgForm = () => {
               },
             ]}
           >
-            <Input placeholder="Enter Your Email Address" />
+            <Input placeholder="Enter your email address" />
           </Form.Item>
         </Col>
         <Col span={12}>
@@ -67,7 +67,7 @@ const OrgForm = () => {
               },
             ]}
           >
-            <Input placeholder="Enter Your Phone Number" />
+            <Input placeholder="Enter Your phone number" />
           </Form.Item>
         </Col>
       </Row>
