@@ -1,6 +1,6 @@
 // columns.ts
 import React from "react";
-import { Space, Table, Switch } from "antd";
+import { Space, Switch } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 
@@ -13,7 +13,7 @@ export interface DataType {
   status: boolean;
 }
 
-let StatusValue = true;
+const StatusValue = true;
 
 const onChange = (checked: boolean) => {
   console.log(`switch to ${checked}`);
@@ -63,7 +63,7 @@ export const Usercolumns: ColumnsType<DataType> = [
   {
     title: "Action",
     key: "action",
-    render: (_, record) => (
+    render: () => (
       <Space size="middle">
         <a>
           <EditOutlined

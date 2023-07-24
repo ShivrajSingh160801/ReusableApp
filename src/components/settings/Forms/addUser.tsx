@@ -1,6 +1,5 @@
-import React from "react";
+
 import { Button, Col, Form, Input, Row, Space, Typography } from "antd";
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import './user.css'
 
 const { Text } = Typography;
@@ -8,7 +7,7 @@ const { Text } = Typography;
 const UserForm = () => {
   const [form] = Form.useForm();
 
-  const onFinish = (values:any) => {
+  const onFinish = (values:object) => {
     console.log("Finish:", values);
   };
 

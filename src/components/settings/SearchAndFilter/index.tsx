@@ -6,10 +6,30 @@ import { SearchAndFilterProps } from './types';
 // For search filter and paginate
 const SearchAndFilter: FC<SearchAndFilterProps> = (props) => {
   // Init
-  const { performSearchHandler, searchValue } = props;
+  const { performSearchHandler, searchValue ,settingComponent } = props;
+  console.log(settingComponent);
   // JSX
   return (
+    <>
+    {settingComponent === 'organizations' ? 
     <div className={styles['search-filter']}>
+      <div className={styles['search-filter__wrapper']}>
+        <Row justify={'space-between'}>
+          
+          <Col>
+            <Space>
+              <Input
+                placeholder="Search here.."
+                suffix={<SearchOutlined />}
+                onChange={performSearchHandler}
+                value={searchValue}
+              />
+             
+            </Space>
+          </Col>
+        </Row>
+      </div>
+    </div> : <div className={styles['search-filter']}>
       <div className={styles['search-filter__wrapper']}>
         <Row justify={'space-between'}>
           <Col>
@@ -18,7 +38,7 @@ const SearchAndFilter: FC<SearchAndFilterProps> = (props) => {
           <Col>
             <Space>
               <Input
-                placeholder="Search user"
+                placeholder="Search here.."
                 suffix={<SearchOutlined />}
                 onChange={performSearchHandler}
                 value={searchValue}
@@ -36,7 +56,9 @@ const SearchAndFilter: FC<SearchAndFilterProps> = (props) => {
           </Col>
         </Row>
       </div>
-    </div>
+    </div>}
+    
+    </>
   );
 };
 

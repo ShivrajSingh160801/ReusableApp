@@ -259,6 +259,7 @@ const SettingsPage = () => {
               columns={Usercolumns}
               performSearchHandler={performSearchHandler}
               searchValue={searchValue}
+              settingComponent = {settingComponent}
             />
           )}
 
@@ -268,6 +269,7 @@ const SettingsPage = () => {
               columns={orgcolumns}
               performSearchHandler={performSearchHandler}
               searchValue={searchValue}
+              settingComponent = {settingComponent}
             />
           )}
 
@@ -277,6 +279,7 @@ const SettingsPage = () => {
               columns={Rolescolumns}
               performSearchHandler={performSearchHandler}
               searchValue={searchValue}
+              settingComponent = {settingComponent}
             />
           )}
 

@@ -31,7 +31,7 @@ const AddInfo: FC<AddInfoProps> = (props) => {
     }
   };
 
-  const GetTitle = () => {
+  const GetTitle = (props:any) => {
     return (
       <>
         <span>{title.charAt(0).toUpperCase() + title.slice(1)}</span>
@@ -39,7 +39,7 @@ const AddInfo: FC<AddInfoProps> = (props) => {
     );
   };
 
-  const ButtonTitle = () => {
+  const ButtonTitle = (props:any) => {
     return (
       <>
         <span>{"Add " + title.charAt(0).toUpperCase() + title.slice(1)}</span>

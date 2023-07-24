@@ -1,14 +1,9 @@
 import React from "react";
 import {
   LoginOutlined,
-  LogoutOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
 import {
   Avatar,
-  Button,
   Col,
   Image,
   Layout,
@@ -19,12 +14,11 @@ import {
 } from "antd";
 import animalPlanetLogo from "../../assets/images/Screenshot_2023-07-19_131133__1_-removebg-preview.png";
 import settingLogo from "../../assets/images/Setting.svg";
-import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import "./index.css";
 import { Link } from "react-router-dom";
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content,Sider } = Layout;
 
 const App: React.FC = () => {
   const {
@@ -35,8 +29,7 @@ const App: React.FC = () => {
       <Sider
         breakpoint="lg"
         collapsedWidth="0"
-        onBreakpoint={(broken) => {}}
-        onCollapse={(collapsed, type) => {}}
+     
         style={{ background: "#286FD1", minHeight: "100vh" }} // Add this line to set the background color to blue
       >
         <div className="demo-logo-vertical" />

@@ -1,7 +1,5 @@
 import React, { ChangeEvent } from "react";
 import { Table } from "antd";
-import type { ColumnsType } from "antd/es/table";
-import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import "./index.css";
 import SearchAndFilter from "../SearchAndFilter";
 
@@ -10,6 +8,7 @@ interface DynamicTableProps {
   data: any;
   performSearchHandler: (event: ChangeEvent<HTMLInputElement>) => void;
   searchValue: string;
+  settingComponent : string
 }
 
 const DynamicTable: React.FC<DynamicTableProps> = ({
@@ -17,11 +16,13 @@ const DynamicTable: React.FC<DynamicTableProps> = ({
   data,
   performSearchHandler,
   searchValue,
+  settingComponent
 }) => (
   <div >
     <SearchAndFilter
       performSearchHandler={performSearchHandler}
       searchValue={searchValue}
+      settingComponent = {settingComponent}
     />
     <Table
       columns={columns}

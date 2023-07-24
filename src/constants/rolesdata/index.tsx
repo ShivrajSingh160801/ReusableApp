@@ -115,7 +115,6 @@ export const Rolescolumns: ColumnsType<RolesDataType> = [
 
 const data: RolesDataType[] = [];
 
-
 for (let i = 1; i <= 10; i++) {
   const entry: RolesDataType = {
     key: `key${i}`,

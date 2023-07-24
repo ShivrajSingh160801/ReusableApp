@@ -15,17 +15,17 @@ import animalPlanetLogo from "../../assets/images/Mask Group 1/Mask Group 1.png"
 import emailLogo from "../../assets/images/Group 59/Group 59.png";
 import passwordLogo from "../../assets/images/Group 27.svg";
 import xeroLogo from "../../assets/images/Mask Group 27/Mask Group 27.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 
 const { Title, Text } = Typography;
 
 const Login: React.FC = () => {
+  const navigate = useNavigate();
   const [form] = useForm(); // Declare the 'form' variable using 'useForm' hook
 
-  const handleFormSubmit = (values: any) => {
-    // Handle form submission
-    console.log(values);
+  const handleFormSubmit = (values: object) => {
+   navigate('/dashboard')
   };
 
   return (
@@ -232,7 +232,7 @@ const Login: React.FC = () => {
                             paddingLeft: "0px",
                           }}
                         >
-                          Don't have an account?{" "}
+                          Don&apos;t  have an account?{" "}
                           <span>
                             <Link to="/register">
                               <Button
